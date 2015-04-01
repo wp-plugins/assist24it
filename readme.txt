@@ -6,7 +6,7 @@ Description: Adds Assist24.it Web Assistance chat & ticket room
 Tags: Assist24, chat, help desk, tickets, assistenza online,call me back
 Author: EzLab - Mauro Cordioli
 Author URI: http://www.ezlab.it/
-Version: 20150401.1
+Version: 20150401.2
 License: GPL v2
 Usage: Visit the "app.Assist24.it" options page to enter your Assist24.it ID and done.
 Requires at least: 3.7

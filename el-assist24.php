@@ -5,10 +5,10 @@
 	Description: Adds Assist24.it assistance chat room
 	Author: Mauro Cordioli
 	Author URI: http://www.ezlab.it/
-	Version: 20150310.1
+	Version: 20150401.2
 	License: GPL v2
 	Usage: Visit the "app.Assist24.it" options page to enter your Assist24.it ID and done.
-	Tags: Assist24, chat, help desk, tickets, assistenza online
+	Tags: Assist24, chat, help desk, tickets, assistenza online, call me back
 */
 
 // NO EDITING REQUIRED - PLEASE SET PREFERENCES IN THE WP ADMIN!
@@ -111,6 +111,21 @@ function elapp_delete_plugin_options() {
 if ($elapp_options['default_options'] == 1) {
 	register_uninstall_hook (__FILE__, 'elapp_delete_plugin_options');
 }
+
+
+function elapp_a24block_func( $atts ) {
+	$atts = shortcode_atts( array(
+		'action' => 'chat',
+		'width' => '400px',
+		'height' => '400px'
+
+	), $atts, 'a24block' );
+
+	return '<div data-a24-block="'.$atts['action'].'"  width="'.$atts['width'].'" height="'.$atts['height'].'"></div>';
+ 
+}
+add_shortcode( 'a24block', 'elapp_a24block_func' );
+
 
 // define default settings
 register_activation_hook (__FILE__, 'elapp_add_defaults');

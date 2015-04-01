@@ -6,13 +6,13 @@ Description: Adds Assist24.it Web Assistance chat & ticket room
 Tags: Assist24, chat, help desk, tickets, assistenza online,call me back
 Author: EzLab - Mauro Cordioli
 Author URI: http://www.ezlab.it/
-Version: 20150310.1
+Version: 20150401.1
 License: GPL v2
 Usage: Visit the "app.Assist24.it" options page to enter your Assist24.it ID and done.
 Requires at least: 3.7
 Tested up to: 4.0
 Stable tag: trunk
-License: GPL v2
+License: GPL v2 
 
 
 
@@ -72,6 +72,14 @@ For more information, visit the [A24 Plugin Homepage](http://www.Assist24.it/wor
 Screenshots available at the [A24 Plugin Homepage](http://www.Assist24.it/wordpress-plugin).
 
 == Changelog ==
+
+
+**20150401.2**
+* short codes "a24block"
+* bug fix
+
+**20150401.1**
+* added a banner
 
 **20150310.1**
 
